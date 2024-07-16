@@ -11,7 +11,7 @@ function Header() {
         <nav className="h-[70px] w-[522px] flex justify-between items-center text-acik font-medium text-[24px]">
           <a href="">Skills</a>
           <a href="">Projects</a>
-          <a href="" className="px-4 py-2 border border-acik-mor rounded-md text-acik-mor">Hire Me</a>
+          <a href="" className="px-10 py-4 border-2 border-acik-mor rounded-lg text-acik-mor font-medium">Hire Me</a>
         </nav>
       </div>
     </header>

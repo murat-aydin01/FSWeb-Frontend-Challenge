@@ -18,8 +18,8 @@ function Hero() {
         </p>
         <nav className="mr-[177px] mt-[50px] h-[70px] w-[560px] flex justify-between items-center text-koyu-mor font-medium text-[24px] ">
           <a href="" className="h-full text-white rounded-lg bg-koyu-mor px-10 flex items-center ">Hire Me</a>
-          <a href="" className="h-full  border rounded-lg border-koyu-mor px-4 flex items-center  "><img src={github}/>Github</a>
-          <a href="" className="h-full  border rounded-lg border-koyu-mor px-4 flex items-center  "><img src={LinkedIn}/>Linkedin</a>
+          <a href="" className="h-full   rounded-lg border-2  border-koyu-mor px-4 flex items-center  "><img src={github}/>Github</a>
+          <a href="" className="h-full   rounded-lg border-2 border-koyu-mor px-4 flex items-center  "><img src={LinkedIn}/>Linkedin</a>
         </nav>
       </div>
       <div className="w-2/5">
