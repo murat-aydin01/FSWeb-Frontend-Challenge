@@ -13,7 +13,8 @@ export default {
         "koyu":"#1F2937",
         "acik":"#6B7280",
         "koyu-mor":"#3730A3",
-        "acik-mor":"#4338CA"
+        "acik-mor":"#4338CA",
+        "cizgi":"#BAB2E7"
       }
     },
   },
