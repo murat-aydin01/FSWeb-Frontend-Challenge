@@ -38,11 +38,11 @@ const projects = [
 
 function Projects() {
   return (
-    <section className="w-full  mt-[56px] flex flex-col">
-      <div className="h-[1px] bg-cizgi mb-8 "></div>
-      <h2 className="text-6xl font-semibold text-koyu dark:text-koyu-dark">Projects</h2>
-      <div className="w-full flex justify-between items-center mt-[45px] gap-x-[160px]">
-      {projects.map((project, index) => (
+    <section className="w-full mt-[56px] flex flex-col">
+      <div className="h-[1px] bg-cizgi mb-8"></div>
+      <h2 className="text-4xl md:text-6xl font-semibold text-koyu dark:text-koyu-dark">Projects</h2>
+      <div className="w-full flex flex-wrap justify-center md:justify-between items-center mt-[45px] gap-8">
+        {projects.map((project, index) => (
           <ProjectCard
             key={index}
             image={project.image}
@@ -53,8 +53,8 @@ function Projects() {
           />
         ))}
       </div>
-      </section>
-  )
+    </section>
+  );
 }
 
 export default Projects

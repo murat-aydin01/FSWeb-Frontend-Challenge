@@ -15,15 +15,15 @@ const skills = [
 
 function Skills() {
   return (
-    <section className="mt-[165px] w-full flex flex-col">
-      <h2 className="text-6xl font-semibold text-koyu dark:text-koyu-dark">Skills</h2>
-      <div className="w-full flex justify-between items-center mt-[45px] gap-x-[160px]">
+    <section className="mt-[50px] md:mt-[165px] w-full flex flex-col items-center">
+      <h2 className="text-4xl md:text-6xl font-semibold text-koyu dark:text-koyu-dark">Skills</h2>
+      <div className="w-full flex flex-col md:flex-row justify-between items-center mt-[45px] gap-x-8 gap-y-10">
         {skills.map((skill, index) => (
-          <div key={index} className="flex flex-col justify-between">
-            <h3 className="text-4xl text-acik-mor dark:text-acik-mor-dark font-medium">
+          <div key={index} className="flex flex-col justify-between w-full md:w-1/3 px-4">
+            <h3 className="text-2xl md:text-4xl text-acik-mor dark:text-acik-mor-dark font-medium">
               {skill.name}
             </h3>
-            <p className="mt-[37px] text-xl text-acik dark:text-acik-dark">
+            <p className="mt-4 md:mt-[37px] text-lg md:text-xl text-acik dark:text-acik-dark">
               {skill.description}
             </p>
           </div>

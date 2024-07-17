@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-    <div className="max-w-[1520px] flex flex-col items-center mx-auto   ">
+    <div className="w-4/5 flex flex-col items-center mx-auto   ">
       <Header/>
       <Hero/>
       <Skills/>
