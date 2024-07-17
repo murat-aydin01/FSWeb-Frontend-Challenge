@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header className="h-[150px] lg:h-[200px] w-full justify-between flex flex-col items-center lg:items-end ">
-      <div className="w-[480px] h-[50px] flex justify-center lg:justify-end items-center lg:mt-[30px]">darkmode</div>
+      <div className="md:w-[480px] h-[50px] flex justify-center lg:justify-end items-center lg:mt-[30px]">darkmode</div>
       <div className="w-full h-[50px] lg:h-[80px] flex justify-center items-center ">
       <div className="hidden h-full aspect-square rounded-full lg:flex items-center justify-center mr-auto bg-isim-yuvarlak-bg dark:bg-isim-yuvarlak-bg-dark ">
           <span className="text-isim-bg dark:text-isim-bg-dark font-semibold text-[32px]  rotate-45">
