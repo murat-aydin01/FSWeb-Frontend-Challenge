@@ -1,12 +1,9 @@
-import project1 from "../assets/project1.png"
-import project2 from "../assets/project2.png"
-import project3 from "../assets/project3.png"
 import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
-    image: project1,
-    title: "Profile",
+    image: "/grid.png",
+    title: "Grid Game",
     description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
     technologies: ["React", "Redux", "Axios"],
     links: [
@@ -15,9 +12,9 @@ const projects = [
     ]
   },
   {
-    image: project2,
-    title: "Profile",
-    description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+    image: "/filmler.png",
+    title: "Movies",
+    description: "A movie application that fetches movies from a database, allows you to add favorites, delete watched movies, and includes an IMDB plugin. Created with Redux, React, axios, and many other libraries.",
     technologies: ["React", "Redux", "Axios"],
     links: [
       { text: "Github", href: "" },
@@ -25,9 +22,9 @@ const projects = [
     ]
   },
   {
-    image: project3,
-    title: "Profile",
-    description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+    image: "/pizza.png",
+    title: "Pizza",
+    description: "The only site everyone who is hungry should visit; eating has never been this quick and easy! Designed using React and styled-components.",
     technologies: ["React", "Redux", "Axios"],
     links: [
       { text: "Github", href: "" },
@@ -41,7 +38,7 @@ function Projects() {
     <section className="w-full mt-[56px] flex flex-col">
       <div className="h-[1px] bg-cizgi mb-8"></div>
       <h2 className="text-4xl md:text-6xl font-semibold text-koyu dark:text-koyu-dark">Projects</h2>
-      <div className="w-full flex flex-wrap justify-center md:justify-between items-center mt-[45px] gap-8">
+      <div className="w-full flex flex-wrap justify-center md:justify-between items-start mt-[45px] gap-8">
         {projects.map((project, index) => (
           <ProjectCard
             key={index}
