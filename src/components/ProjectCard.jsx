@@ -30,4 +30,4 @@ const ProjectCard = ({ image, title, description, technologies, links }) => {
   );
 };
 
-export default ProjectCard
+export default ProjectCard;
