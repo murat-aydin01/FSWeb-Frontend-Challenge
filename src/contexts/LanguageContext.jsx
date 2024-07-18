@@ -1,10 +1,12 @@
-import React, { createContext, useState, useContext, useEffect } from 'react';
+import { createContext, useState, useContext, useEffect } from 'react';
 import axios from 'axios';
+import useLocalStorage from '../hooks/useLocalStorage';
+
 
 const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useLocalStorage('language', 'en');
   const [texts, setTexts] = useState({});
   const [loading, setLoading] = useState(true);
 
