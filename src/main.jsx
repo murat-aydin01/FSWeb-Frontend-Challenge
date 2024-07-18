@@ -4,13 +4,16 @@ import App from "./App.jsx";
 import "./index.css";
 import { LanguageProvider } from "./contexts/LanguageContext.jsx";
 import { ThemeProvider } from "./contexts/ThemeContext.jsx";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  <QueryClientProvider client={queryClient}>
     <LanguageProvider>
       <ThemeProvider>
         <App />
       </ThemeProvider>
     </LanguageProvider>
-  </React.StrictMode>
+  </QueryClientProvider>
 );

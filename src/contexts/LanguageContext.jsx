@@ -1,34 +1,30 @@
-import { createContext, useState, useContext, useEffect } from 'react';
-import axios from 'axios';
+import { createContext, useContext, useEffect } from 'react';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
 import useLocalStorage from '../hooks/useLocalStorage';
-
+import useAxios from '../hooks/useAxios';
 
 const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useLocalStorage('language', 'en');
-  const [texts, setTexts] = useState({});
-  const [loading, setLoading] = useState(true);
+  const queryClient = useQueryClient();
 
-  useEffect(() => {
-    setLoading(true);
-    axios.get(`https://6698c0302069c438cd6fce02.mockapi.io/${language}`) 
-      .then(response => {
-        setTexts(response.data[0]); 
-        setLoading(false);
-      })
-      .catch(error => {
-        console.error("Error fetching the texts: ", error);
-        setLoading(false);
-      });
-  }, [language]);
+  const { data: texts, isLoading: loading, isError: error, refetch } = useQuery({
+    queryKey: ['texts', language],
+    queryFn: () => useAxios(`${language}`, {}),
+    keepPreviousData: true,
+  });
 
   const changeLanguage = (lang) => {
     setLanguage(lang);
+    refetch();
   };
 
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error loading data</div>;
+
   return (
-    <LanguageContext.Provider value={{ language, changeLanguage, texts, loading }}>
+    <LanguageContext.Provider value={{ language, changeLanguage, texts }}>
       {children}
     </LanguageContext.Provider>
   );
