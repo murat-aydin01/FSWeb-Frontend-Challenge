@@ -6,10 +6,10 @@ function Projects() {
   const { projects } = texts;
 
   return (
-    <section className="w-full mt-[56px] flex flex-col">
+    <section className="w-full mt-[56px] flex flex-col items-center md:items-start">
       <div className="h-[1px] bg-cizgi mb-8"></div>
       <h2 className="text-4xl md:text-6xl font-semibold text-koyu dark:text-koyu-dark">{projects.title}</h2>
-      <div className="w-full flex flex-wrap justify-center md:justify-between items-stretch mt-[45px] gap-8">
+      <div className="w-full flex flex-wrap justify-center md:justify-between items-start mt-[45px] gap-8">
         {projects.items.map((project, index) => (
           <ProjectCard
             key={index}

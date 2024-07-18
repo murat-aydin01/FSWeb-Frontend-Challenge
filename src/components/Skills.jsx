@@ -5,7 +5,7 @@ function Skills() {
   const { skills } = texts;
 
   return (
-    <section className="mt-[50px] md:mt-[165px] w-full flex flex-col items-center">
+    <section className="mt-[50px] md:mt-[165px] w-full flex flex-col items-center md:items-start">
       <h2 className="text-4xl md:text-6xl font-semibold text-koyu dark:text-koyu-dark">{skills.title}</h2>
       <div className="w-full flex flex-col md:flex-row justify-between items-center mt-[45px] gap-x-8 gap-y-10">
         {skills.items.map((skill, index) => (
