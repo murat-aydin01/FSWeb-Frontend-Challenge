@@ -38,7 +38,7 @@ function Projects() {
     <section className="w-full mt-[56px] flex flex-col">
       <div className="h-[1px] bg-cizgi mb-8"></div>
       <h2 className="text-4xl md:text-6xl font-semibold text-koyu dark:text-koyu-dark">Projects</h2>
-      <div className="w-full flex flex-wrap justify-center md:justify-between items-start mt-[45px] gap-8">
+      <div className="w-full flex flex-wrap justify-center md:justify-between items-stretch mt-[45px] gap-8">
         {projects.map((project, index) => (
           <ProjectCard
             key={index}
