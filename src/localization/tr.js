@@ -4,7 +4,7 @@ const tr = {
       projects: "Projeler",
       hireMe: "Beni İşe Al",
       darkMode: "KARANLIK MOD",
-      language: "TÜRKÇE"
+      language: "ENGLISH"
     },
     hero: {
       name: "Murat AYDIN",
