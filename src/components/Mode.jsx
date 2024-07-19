@@ -1,3 +1,4 @@
+import { toast } from 'react-toastify';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useTheme } from '../contexts/ThemeContext';
 
@@ -7,6 +8,7 @@ function Mode() {
 
   const handleLanguageChange = () => {
     changeLanguage(language === 'en' ? 'tr' : 'en');
+    toast(language === 'en' ? 'Language changed to English' : 'Dil Türkçe olarak değiştirildi');
   };
 
   return (
