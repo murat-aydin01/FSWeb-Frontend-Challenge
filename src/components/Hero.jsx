@@ -19,10 +19,10 @@ function Hero() {
           <a href="" className="w-full md:w-auto h-full text-white dark:text-black rounded-lg bg-koyu-mor dark:bg-koyu-mor-dark px-6 py-2 md:px-10 flex items-center justify-center">
             {hero.hireMe}
           </a>
-          <a href="" className="w-full md:w-auto h-full rounded-lg border-2 border-koyu-mor dark:border-koyu-mor-dark px-6 py-2 md:px-4 flex items-center justify-center">
+          <a href="https://github.com/murat-aydin01" className="w-full md:w-auto h-full rounded-lg border-2 border-koyu-mor dark:border-koyu-mor-dark px-6 py-2 md:px-4 flex items-center justify-center">
             <img src="/github.svg" alt="GitHub" className="mr-2" />{hero.github}
           </a>
-          <a href="" className="w-full md:w-auto h-full rounded-lg border-2 border-koyu-mor dark:border-koyu-mor-dark px-6 py-2 md:px-4 flex items-center justify-center">
+          <a href="https://www.linkedin.com/in/murat-aydin-1394b51ba/" className="w-full md:w-auto h-full rounded-lg border-2 border-koyu-mor dark:border-koyu-mor-dark px-6 py-2 md:px-4 flex items-center justify-center">
             <img src="/LinkedIn.svg" alt="LinkedIn" className="mr-2" />{hero.linkedin}
           </a>
         </nav>
